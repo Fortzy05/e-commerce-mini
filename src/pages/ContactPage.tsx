@@ -5,7 +5,7 @@ import MessageBox from '@/sections/contact/MessageBox';
 const ContactPage = () => {
     return (
         <MainLayout>
-            <section className="container-main flex space-x-4">
+            <section className="container-main flex space-x-4 gap-2">
                 <ContactUsCard />
                 <MessageBox />
             </section>
