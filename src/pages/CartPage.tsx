@@ -1,11 +1,11 @@
-import CartTable from "@/components/cartTable/cartTable"
-import { MainLayout } from "@/layout/MainLayout"
+import CartTable from '@/components/cartTable/cartTable';
+import { MainLayout } from '@/layout/MainLayout';
 
 const CartPage = () => {
-  return (
-    <MainLayout>
-      <CartTable />
-    </MainLayout>
-  );
+    return (
+        <MainLayout>
+            <CartTable />
+        </MainLayout>
+    );
 };
-export default CartPage
+export default CartPage;

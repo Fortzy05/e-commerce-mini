@@ -8,25 +8,25 @@ import NoPage from './pages/404';
 import SignupPage from './pages/auth/SignupPage';
 
 function App() {
-  return (
-    <Router>
-      <Routes>
-        {/* Public pages */}
-        <Route path='/' element={<HomePage />} />
-        <Route path='/about' element={<AboutPage />} />
-        <Route path='/contact' element={<ContactPage />} />
+    return (
+        <Router>
+            <Routes>
+                {/* Public pages */}
+                <Route path="/" element={<HomePage />} />
+                <Route path="/about" element={<AboutPage />} />
+                <Route path="/contact" element={<ContactPage />} />
 
-        <Route path='/login' element={<LoginPage />} />
-        <Route path='/signup' element={<SignupPage/>} />
-        
-        {/* Authenticated Pages */}
-        <Route path='/cart' element={<CartPage />} />
+                <Route path="/login" element={<LoginPage />} />
+                <Route path="/signup" element={<SignupPage />} />
 
-        {/* 404 page */}
-        <Route path='*' element={<NoPage />} />
-      </Routes>
-    </Router>
-  );
+                {/* Authenticated Pages */}
+                <Route path="/cart" element={<CartPage />} />
+
+                {/* 404 page */}
+                <Route path="*" element={<NoPage />} />
+            </Routes>
+        </Router>
+    );
 }
 
 export default App;
